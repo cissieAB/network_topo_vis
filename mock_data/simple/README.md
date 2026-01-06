@@ -10,11 +10,11 @@ The JSON format is (currently) defined as:
 ```json
 [
    { // One timestamp (by second) record
-        "timestamp": 1762923213,
+        "timestamp": 1762923213,  // integer
         "stats": [
             { // One (src, dst) pair
                 "[129.57.177.6, 129.57.177.5]": {
-                    "total_bytes": ,
+                    "total_bytes": 19625315996,  // the sum of TCP+UDP bytes, an integer
                     "udp_bytes": [ ],   // fine-grained bins within this tick
                     "udp_packets": [ ],
                     "tcp_bytes": [ ],
